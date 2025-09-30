@@ -1,0 +1,101 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background: linear-gradient(135deg, #f0f4ff, #e0e7ff);
+  color: #333;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 30px;
+  background: #003366;
+  color: white;
+}
+#judul {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+.tagline {
+  font-style: italic;
+  color: #cce0ff;
+}
+
+/* Profil Section */
+.profil {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px 20px;
+}
+.foto-profil {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #003366;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+.biodata {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+}
+.biodata h2 {
+  margin-bottom: 15px;
+  color: #003366;
+}
+.biodata ul {
+  list-style: none;
+}
+.biodata li {
+  margin-bottom: 8px;
+}
+
+/* Kontak Section */
+.kontak {
+  text-align: center;
+  padding: 30px;
+  background: #f9f9f9;
+}
+.kontak h2 {
+  margin-bottom: 15px;
+  color: #003366;
+}
+.kontak a {
+  color: #0066cc;
+  text-decoration: none;
+}
+.kontak a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #003366;
+  color: white;
+  font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .profil {
+    flex-direction: column;
+    text-align: center;
+  }
+  .biodata {
+    text-align: left;
+    width: 90%;
+  }
+}
